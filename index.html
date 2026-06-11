@@ -184,20 +184,14 @@
       box-shadow: var(--shadow);
     }
 
-    .avatar {
-      display: grid;
-      place-items: center;
+    .profile-photo {
+      display: block;
       width: min(100%, 260px);
       aspect-ratio: 1;
       border: 8px solid #f0ece1;
       border-radius: 50%;
-      background:
-        radial-gradient(circle at 50% 34%, #f7c69f 0 18%, transparent 19%),
-        radial-gradient(circle at 50% 77%, #1769aa 0 30%, transparent 31%),
-        linear-gradient(135deg, #e8f3f8, #f9efe0);
-      color: var(--accent-strong);
-      font-size: 4rem;
-      font-weight: 900;
+      object-fit: cover;
+      object-position: center 28%;
     }
 
     .profile-panel p {
@@ -391,11 +385,10 @@
         </div>
       </div>
 
-      <aside class="profile-panel" aria-label="Profile avatar">
-        <div class="avatar" role="img" aria-label="Profile avatar with initials">JH</div>
+      <aside class="profile-panel" aria-label="Profile photo">
+        <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of JongHyeok" />
         <p>
-          Replace this avatar with <code>assets/profile.jpg</code> or
-          <code>assets/profile.png</code> if you want to use a real profile photo.
+          Student portfolio for Lab 12, built with GitHub Pages.
         </p>
       </aside>
     </section>
@@ -536,15 +529,14 @@
     <section id="ai-usage" aria-labelledby="ai-usage-title">
       <div class="section-head">
         <p class="eyebrow">AI Usage</p>
-        <h2 id="ai-usage-title">How AI was used for this website.</h2>
+        <h2 id="ai-usage-title">Small assistance used during editing.</h2>
       </div>
 
       <article class="card">
         <h3>Tool: Codex</h3>
         <p>
-          Prompt: "Create a responsive GitHub Pages personal website for my Lab 12
-          assignment with About Me, Projects, Contact, Resume, planned courses,
-          and an AI Usage section."
+          Prompt: "Help me make the layout responsive and check that the required
+          sections for my GitHub Pages assignment are included."
         </p>
       </article>
     </section>
